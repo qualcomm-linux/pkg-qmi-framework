@@ -1,0 +1,11 @@
+qcom-qmi-framework (1.0.1) UNRELEASED; urgency=medium
+
+  * updated versioning info to established sync between yocto and debian
+
+ -- Jairaj Solanki <jsolanki@qti.qualcomm.com>  Tue, 26 Aug 2025 14:34:36 +0530
+
+qcom-qmi-framework (1.0.0) noble; urgency=low
+
+  * Initial release.
+
+ -- Sudeepgoud Patil <sudeepgo@qti.qualcomm.com>  Wed, 11 Dec 2024 20:14:14 -0800
