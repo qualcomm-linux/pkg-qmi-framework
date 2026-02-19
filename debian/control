@@ -1,19 +1,53 @@
-Source: template
+Source: qcom-qmi-framework
 Section: libs
 Priority: optional
-Maintainer: Simon Beaudoin <sbeaudoi@qti.qualcomm.com>
-Build-Depends: debhelper (>= 13)
+Maintainer: Vishnu Santhosh <vishnu.santhosh@oss.qualcomm.com>
+Build-Depends: debhelper-compat (= 13), pkgconf, libglib2.0-dev, libqrtr-dev
 Standards-Version: 4.6.2
+Homepage: http://support.cdmatech.com
 
-Package: template1
-Architecture: any
+Package: qcom-libqmi-framework
+Architecture: arm64
+Section: libs
+Replaces: libqmi-framework1
+Breaks: libqmi-framework1
 Depends: ${shlibs:Depends}, ${misc:Depends}
-Description: Template package
- This is an example package to demonstrate the Qualcomm OSS development flow
+Description: QMI Framework applications & supporting services
+ QMI framework will provide sample applications to test QMI communication
+ between Apps and other remote sub systems. It also includes multiple
+ services to support the QMI communications. qrtr-ns service should
+ be running in background to support QMI communication because qrtr-ns is the
+ one which handles the qrtr control packet. qrtr-filter service is required
+ if the target want QMI access control which avoids unprivileged access to
+ QMI services
 
-Package: template-dev
+Package: qcom-libqmi-framework-dev
+Architecture: arm64
 Section: libdevel
-Architecture: any
-Depends: template1 (= ${binary:Version}), ${misc:Depends}
-Description: Template package dev
- This is an example package to demonstrate the Qualcomm OSS development flow
+Replaces: libqmi-framework-dev
+Breaks: libqmi-framework-dev
+Depends: ${shlibs:Depends}, ${misc:Depends:},
+ qcom-libqmi-framework (= ${binary:Version})
+Description: QMI Framework applications & supporting services - headers package
+ QMI framework will provide sample applications to test QMI
+ communication between Apps and other remote sub systems. It also includes
+ multiple services to support the QMI communications. qrtr-ns service should
+ be running in background to support QMI communication because qrtr-ns is the
+ one which handles the qrtr control packet. qrtr-filter service is required
+ if the target want QMI access control which avoids unprivileged access to
+ QMI services - headers package
+
+Package: qcom-qmi-framework-utils
+Architecture: arm64
+Replaces: qmi-framework-utils
+Breaks: qmi-framework-utils
+Depends: ${shlibs:Depends}, ${misc:Depends},
+ qcom-libqmi-framework (= ${binary:Version})
+Description: QMI Framework applications & supporting services - tools package
+ QMI framework will provide sample applications to test QMI
+ communication between Apps and other remote sub systems. It also includes
+ multiple services to support the QMI communications. qrtr-ns service should
+ be running in background to support QMI communication because qrtr-ns is the
+ one which handles the qrtr control packet. qrtr-filter service is required
+ if the target want QMI access control which avoids unprivileged access to
+ QMI services - tools package
