@@ -1,4 +1,4 @@
-Source: qcom-qmi-framework
+Source: qmi-framework
 Section: libs
 Priority: optional
 Maintainer: Vishnu Santhosh <vishnu.santhosh@oss.qualcomm.com>
@@ -6,48 +6,67 @@ Build-Depends: debhelper-compat (= 13), pkgconf, libglib2.0-dev, libqrtr-dev
 Standards-Version: 4.6.2
 Homepage: http://support.cdmatech.com
 
-Package: qcom-libqmi-framework
+Package: libqcci1
 Architecture: arm64
 Section: libs
-Replaces: libqmi-framework1
-Breaks: libqmi-framework1
 Depends: ${shlibs:Depends}, ${misc:Depends}
-Description: QMI Framework applications & supporting services
- QMI framework will provide sample applications to test QMI communication
- between Apps and other remote sub systems. It also includes multiple
- services to support the QMI communications. qrtr-ns service should
- be running in background to support QMI communication because qrtr-ns is the
- one which handles the qrtr control packet. qrtr-filter service is required
- if the target want QMI access control which avoids unprivileged access to
- QMI services
+Description: QMI Client Common Interface library
+ QMI framework provides the Client Common Interface (CCI) library for
+ QMI communication between applications and remote subsystems.
+ .
+ This package contains the shared library.
 
-Package: qcom-libqmi-framework-dev
+Package: libqcsi1
+Architecture: arm64
+Section: libs
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: QMI Service Common Interface library
+ QMI framework provides the Service Common Interface (CSI) library for
+ QMI communication between applications and remote subsystems.
+ .
+ This package contains the shared library.
+
+Package: libqencdec1
+Architecture: arm64
+Section: libs
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: QMI encoder/decoder library
+ QMI framework provides the encoder/decoder library for QMI message
+ encoding and decoding operations.
+ .
+ This package contains the shared library.
+
+Package: libqmi-common1
+Architecture: arm64
+Section: libs
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: QMI common library
+ QMI framework provides common functionality shared across QMI
+ components for communication between applications and remote subsystems.
+ .
+ This package contains the shared library.
+
+Package: libqmi-framework-dev
 Architecture: arm64
 Section: libdevel
-Replaces: libqmi-framework-dev
-Breaks: libqmi-framework-dev
-Depends: ${shlibs:Depends}, ${misc:Depends:},
- qcom-libqmi-framework (= ${binary:Version})
-Description: QMI Framework applications & supporting services - headers package
- QMI framework will provide sample applications to test QMI
- communication between Apps and other remote sub systems. It also includes
- multiple services to support the QMI communications. qrtr-ns service should
- be running in background to support QMI communication because qrtr-ns is the
- one which handles the qrtr control packet. qrtr-filter service is required
- if the target want QMI access control which avoids unprivileged access to
- QMI services - headers package
+Depends: ${misc:Depends},
+ libqcci1 (= ${binary:Version}),
+ libqcsi1 (= ${binary:Version}),
+ libqencdec1 (= ${binary:Version}),
+ libqmi-common1 (= ${binary:Version})
+Description: QMI Framework development files
+ QMI framework provides libraries and tools for QMI communication
+ between applications and remote subsystems. It includes multiple
+ services to support QMI communications.
+ .
+ This package contains the development headers and static libraries.
 
-Package: qcom-qmi-framework-utils
+Package: qmi-framework-utils
 Architecture: arm64
-Replaces: qmi-framework-utils
-Breaks: qmi-framework-utils
-Depends: ${shlibs:Depends}, ${misc:Depends},
- qcom-libqmi-framework (= ${binary:Version})
-Description: QMI Framework applications & supporting services - tools package
- QMI framework will provide sample applications to test QMI
- communication between Apps and other remote sub systems. It also includes
- multiple services to support the QMI communications. qrtr-ns service should
- be running in background to support QMI communication because qrtr-ns is the
- one which handles the qrtr control packet. qrtr-filter service is required
- if the target want QMI access control which avoids unprivileged access to
- QMI services - tools package
+Section: utils
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: QMI Framework test utilities
+ QMI framework provides sample applications to test QMI communication
+ between applications and remote subsystems.
+ .
+ This package contains test utilities including qcci_test and qcsi_test.
