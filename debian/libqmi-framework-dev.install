@@ -3,3 +3,4 @@ usr/lib/*/libqcci.so
 usr/lib/*/libqcsi.so
 usr/lib/*/libqencdec.so
 usr/lib/*/libqmi_common.so
+usr/lib/*/pkgconfig/qmi-framework.pc
