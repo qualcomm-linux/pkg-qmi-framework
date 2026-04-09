@@ -1,3 +1,9 @@
+qmi-framework (0.1.4-2) UNRELEASED; urgency=medium
+
+  * Initial commit
+
+ -- Vishnu Santhosh <vishnu.santhosh@oss.qualcomm.com>  Thu, 09 Apr 2026 09:02:44 +0000
+
 qmi-framework (0.1.4-1) unstable; urgency=medium
 
   [ Vishnu Santhosh ]
