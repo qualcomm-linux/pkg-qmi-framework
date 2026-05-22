@@ -1,8 +1,9 @@
-qmi-framework (0.1.4-5) UNRELEASED; urgency=medium
+qmi-framework (0.1.4-5) unstable; urgency=medium
 
+  [ Vishnu Santhosh ]
   * Initial commit
 
- -- Vishnu Santhosh <vishnu.santhosh@oss.qualcomm.com>  Mon, 20 Apr 2026 11:36:54 +0000
+ -- GitHub Service Bot <githubservice@qti.qualcomm.com>  Fri, 22 May 2026 06:21:27 +0000
 
 qmi-framework (0.1.4-4) unstable; urgency=medium
 
