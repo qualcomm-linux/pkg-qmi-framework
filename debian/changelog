@@ -1,9 +1,10 @@
-qmi-framework (0.1.4-7) UNRELEASED; urgency=medium
+qmi-framework (0.1.4-7) resolute; urgency=medium
 
+  [ Vishnu Santhosh ]
   * Initial Ubuntu Resolute release of qmi-framework 0.1.4
   * Packaging based on qcom/debian/latest; no upstream source changes
 
- -- Vishnu Santhosh <vishnu.santhosh@oss.qualcomm.com>  Mon, 08 Jun 2026 09:20:25 +0000
+ -- GitHub Service Bot <githubservice@qti.qualcomm.com>  Tue, 09 Jun 2026 10:50:37 +0000
 
 qmi-framework (0.1.4-6) resolute; urgency=medium
 
