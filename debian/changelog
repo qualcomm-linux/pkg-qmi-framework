@@ -1,75 +1,9 @@
-qmi-framework (0.1.4-8~) UNRELEASED; urgency=medium
+qmi-framework (0.1.4-8) UNRELEASED; urgency=medium
 
-  * WIP — update changelog before next release
+  * CI: sync pkg-pr-hook workflow from qcom-build-utils
+  * No packaging changes from 0.1.4-7
 
  -- Vishnu Santhosh <vishnu.santhosh@oss.qualcomm.com>  Tue, 09 Jun 2026 10:51:39 +0000
-
-qmi-framework (0.1.4-7) resolute; urgency=medium
-
-  [ Vishnu Santhosh ]
-  * Initial Ubuntu Resolute release of qmi-framework 0.1.4
-  * Packaging based on qcom/debian/latest; no upstream source changes
-
- -- GitHub Service Bot <githubservice@qti.qualcomm.com>  Tue, 09 Jun 2026 10:50:37 +0000
-
-qmi-framework (0.1.4-6) resolute; urgency=medium
-
-  [ Vishnu Santhosh ]
-  * Initial commit
-
- -- GitHub Service Bot <githubservice@qti.qualcomm.com>  Mon, 08 Jun 2026 09:19:23 +0000
-
-qmi-framework (0.1.4-5) unstable; urgency=medium
-
-  [ Vishnu Santhosh ]
-  * Initial commit
-
- -- GitHub Service Bot <githubservice@qti.qualcomm.com>  Fri, 22 May 2026 06:21:27 +0000
-
-qmi-framework (0.1.4-4) unstable; urgency=medium
-
-  [ Vishnu Santhosh ]
-  * Initial commit
-
- -- GitHub Service Bot <githubservice@qti.qualcomm.com>  Mon, 20 Apr 2026 11:35:55 +0000
-
-qmi-framework (0.1.4-3) unstable; urgency=medium
-
-  [ Vishnu Santhosh ]
-  * Initial commit
-
- -- GitHub Service Bot <githubservice@qti.qualcomm.com>  Wed, 15 Apr 2026 06:17:44 +0000
-
-qmi-framework (0.1.4-2) unstable; urgency=medium
-
-  [ Vishnu Santhosh ]
-  * Initial commit
-
- -- GitHub Service Bot <githubservice@qti.qualcomm.com>  Thu, 09 Apr 2026 09:09:49 +0000
-
-qmi-framework (0.1.4-1) unstable; urgency=medium
-
-  [ Vishnu Santhosh ]
-  * Initial commit
-
-  [ GitHub Service Bot ]
-  * New upstream release
-
- -- GitHub Service Bot <githubservice@qti.qualcomm.com>  Thu, 09 Apr 2026 09:00:02 +0000
-
-qmi-framework (0.1.3-3) unstable; urgency=medium
-
-  [ Vishnu Santhosh ]
-  * Initial commit
-
- -- GitHub Service Bot <githubservice@qti.qualcomm.com>  Wed, 01 Apr 2026 08:26:55 +0000
-
-qmi-framework (0.1.3-2) unstable; urgency=medium
-
-  [ Vishnu Santhosh ]
-  * Initial commit
-
- -- GitHub Service Bot <githubservice@qti.qualcomm.com>  Tue, 24 Mar 2026 05:59:05 +0000
 
 qmi-framework (0.1.3-1) unstable; urgency=medium
 
