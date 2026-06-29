@@ -1,8 +1,9 @@
-qmi-framework (0.1.4-0qli+staging1) UNRELEASED; urgency=medium
+qmi-framework (0.1.4-0qli+staging1) forky; urgency=medium
 
+  [ Vishnu Santhosh ]
   * Initial commit
 
- -- Vishnu Santhosh <vishnu.santhosh@oss.qualcomm.com>  Fri, 22 May 2026 06:22:47 +0000
+ -- root <root@39e534ec9165>  Mon, 29 Jun 2026 15:24:41 +0000
 
 qmi-framework (0.1.4-5) unstable; urgency=medium
 
