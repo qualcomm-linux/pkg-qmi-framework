@@ -1,9 +1,10 @@
-qmi-framework (0.1.4-0qli+staging1~bpo1) UNRELEASED; urgency=medium
+qmi-framework (0.1.4-0qli+staging1~bpo1) trixie; urgency=medium
 
+  [ Vishnu Santhosh ]
   * Initial Debian trixie release of qmi-framework 0.1.4
   * Packaging based on qcom/debian/latest; no upstream source changes
 
- -- Vishnu Santhosh <vishnu.santhosh@oss.qualcomm.com>  Fri, 22 May 2026 06:22:47 +0000
+ -- root <root@6b45419fa586>  Tue, 30 Jun 2026 09:13:12 +0000
 
 qmi-framework (0.1.3-1) unstable; urgency=medium
 
