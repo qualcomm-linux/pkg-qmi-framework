@@ -1,3 +1,9 @@
+qmi-framework (0.1.4-0qli1~bpo13+1~) UNRELEASED; urgency=medium
+
+  * Rebuild for trixie.
+
+ -- Agathe Porte <agathe.porte@oss.qualcomm.com>  Wed, 19 Aug 2026 16:19:38 +0200
+
 qmi-framework (0.1.4-0qli1) forky; urgency=medium
 
   [ Agathe Porte ]
