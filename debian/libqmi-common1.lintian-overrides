@@ -1,0 +1,2 @@
+# the libqmi_common library depends on nothing, not even libc
+shared-library-lacks-prerequisites [*]
