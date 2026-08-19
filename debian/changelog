@@ -1,4 +1,4 @@
-qmi-framework (0.1.4-0qli1~) UNRELEASED; urgency=medium
+qmi-framework (0.1.4-0qli1) forky; urgency=medium
 
   [ Agathe Porte ]
   * Initial release to QLI
@@ -14,7 +14,7 @@ qmi-framework (0.1.4-0qli1~) UNRELEASED; urgency=medium
   * Bump Standards-Version to 4.7.4 (no changes needed)
   * lib*: start tracking symbols
 
- -- Agathe Porte <agathe.porte@oss.qualcomm.com>  Wed, 19 Aug 2026 16:09:57 +0200
+ -- Debusine Action Bot <noreply@bot.invalid>  Wed, 19 Aug 2026 14:11:35 +0000
 
 qmi-framework (0.1.4-0qli+staging1) forky; urgency=medium
 
