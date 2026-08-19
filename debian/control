@@ -1,7 +1,7 @@
 Source: qmi-framework
 Section: libs
 Priority: optional
-Maintainer: Vishnu Santhosh <vishnu.santhosh@oss.qualcomm.com>
+Maintainer: Agathe Porte <agathe.porte@oss.qualcomm.com>
 Build-Depends: debhelper-compat (= 13), pkgconf, libglib2.0-dev, libqrtr-dev
 Standards-Version: 4.6.2
 Homepage: http://support.cdmatech.com
