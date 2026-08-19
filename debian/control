@@ -1,7 +1,11 @@
 Source: qmi-framework
 Section: libs
 Maintainer: Agathe Porte <agathe.porte@oss.qualcomm.com>
-Build-Depends: debhelper-compat (= 13), pkgconf, libglib2.0-dev, libqrtr-dev
+Build-Depends:
+ debhelper-compat (= 13),
+ libglib2.0-dev,
+ libqrtr-dev,
+ pkgconf,
 Standards-Version: 4.6.2
 Homepage: http://support.cdmatech.com
 Vcs-Browser: https://github.com/qualcomm-linux/pkg-qmi-framework
@@ -9,7 +13,9 @@ Vcs-Git: https://github.com/qualcomm-linux/pkg-qmi-framework.git
 
 Package: libqcci1
 Architecture: arm64
-Depends: ${shlibs:Depends}, ${misc:Depends}
+Depends:
+ ${misc:Depends},
+ ${shlibs:Depends},
 Description: QMI Client Common Interface library
  QMI framework provides the Client Common Interface (CCI) library for
  QMI communication between applications and remote subsystems.
@@ -18,7 +24,9 @@ Description: QMI Client Common Interface library
 
 Package: libqcsi1
 Architecture: arm64
-Depends: ${shlibs:Depends}, ${misc:Depends}
+Depends:
+ ${misc:Depends},
+ ${shlibs:Depends},
 Description: QMI Service Common Interface library
  QMI framework provides the Service Common Interface (CSI) library for
  QMI communication between applications and remote subsystems.
@@ -27,7 +35,9 @@ Description: QMI Service Common Interface library
 
 Package: libqencdec1
 Architecture: arm64
-Depends: ${shlibs:Depends}, ${misc:Depends}
+Depends:
+ ${misc:Depends},
+ ${shlibs:Depends},
 Description: QMI encoder/decoder library
  QMI framework provides the encoder/decoder library for QMI message
  encoding and decoding operations.
@@ -36,7 +46,9 @@ Description: QMI encoder/decoder library
 
 Package: libqmi-common1
 Architecture: arm64
-Depends: ${shlibs:Depends}, ${misc:Depends}
+Depends:
+ ${misc:Depends},
+ ${shlibs:Depends},
 Description: QMI common library
  QMI framework provides common functionality shared across QMI
  components for communication between applications and remote subsystems.
@@ -46,11 +58,12 @@ Description: QMI common library
 Package: libqmi-framework-dev
 Architecture: arm64
 Section: libdevel
-Depends: ${misc:Depends},
+Depends:
  libqcci1 (= ${binary:Version}),
  libqcsi1 (= ${binary:Version}),
  libqencdec1 (= ${binary:Version}),
- libqmi-common1 (= ${binary:Version})
+ libqmi-common1 (= ${binary:Version}),
+ ${misc:Depends},
 Description: QMI Framework development files
  QMI framework provides libraries and tools for QMI communication
  between applications and remote subsystems. It includes multiple
@@ -61,7 +74,9 @@ Description: QMI Framework development files
 Package: qmi-framework-utils
 Architecture: arm64
 Section: utils
-Depends: ${shlibs:Depends}, ${misc:Depends}
+Depends:
+ ${misc:Depends},
+ ${shlibs:Depends},
 Description: QMI Framework test utilities
  QMI framework provides sample applications to test QMI communication
  between applications and remote subsystems.
