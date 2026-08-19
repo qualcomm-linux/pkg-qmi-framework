@@ -1,6 +1,6 @@
 Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
 Upstream-Name: qmi-framework
-Upstream-Contact: https://github.com/quic/qmi-framework/issues/new
+Upstream-Contact: https://github.com/qualcomm/qmi-framework/issues/new
 Source: https://github.com/quic/qmi-framework
 
 Files: *
