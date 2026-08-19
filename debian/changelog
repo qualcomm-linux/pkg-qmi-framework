@@ -1,8 +1,9 @@
-qmi-framework (0.1.4-0qli+staging2~) UNRELEASED; urgency=medium
+qmi-framework (0.1.4-0qli1~) UNRELEASED; urgency=medium
 
-  * Unreleased changes
+  [ Agathe Porte ]
+  * Initial release to QLI
 
- -- root <root@a42a1b617652>  Mon, 29 Jun 2026 15:27:59 +0000
+ -- Agathe Porte <agathe.porte@oss.qualcomm.com>  Wed, 19 Aug 2026 14:51:22 +0200
 
 qmi-framework (0.1.4-0qli+staging1) forky; urgency=medium
 
