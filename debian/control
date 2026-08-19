@@ -7,7 +7,6 @@ Homepage: http://support.cdmatech.com
 
 Package: libqcci1
 Architecture: arm64
-Section: libs
 Depends: ${shlibs:Depends}, ${misc:Depends}
 Description: QMI Client Common Interface library
  QMI framework provides the Client Common Interface (CCI) library for
@@ -17,7 +16,6 @@ Description: QMI Client Common Interface library
 
 Package: libqcsi1
 Architecture: arm64
-Section: libs
 Depends: ${shlibs:Depends}, ${misc:Depends}
 Description: QMI Service Common Interface library
  QMI framework provides the Service Common Interface (CSI) library for
@@ -27,7 +25,6 @@ Description: QMI Service Common Interface library
 
 Package: libqencdec1
 Architecture: arm64
-Section: libs
 Depends: ${shlibs:Depends}, ${misc:Depends}
 Description: QMI encoder/decoder library
  QMI framework provides the encoder/decoder library for QMI message
@@ -37,7 +34,6 @@ Description: QMI encoder/decoder library
 
 Package: libqmi-common1
 Architecture: arm64
-Section: libs
 Depends: ${shlibs:Depends}, ${misc:Depends}
 Description: QMI common library
  QMI framework provides common functionality shared across QMI
