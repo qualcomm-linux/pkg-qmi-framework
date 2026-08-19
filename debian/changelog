@@ -2,8 +2,19 @@ qmi-framework (0.1.4-0qli1~) UNRELEASED; urgency=medium
 
   [ Agathe Porte ]
   * Initial release to QLI
+  * Put myself as maintainer for QLI
+  * d/control: drop obsolete Priority field
+  * d/control: drop repeated sections
+  * d/control: add missing Vcs-Browser and Vcs-Git
+  * d/rules: use execute_after_dh_install
+  * d/rules: enable hardening+=all
+  * Introduce d/upstream/metadata
+  * d/copyright: s/quic/qualcomm/ for Github repo
+  * Introduce d/watch
+  * Bump Standards-Version to 4.7.4 (no changes needed)
+  * lib*: start tracking symbols
 
- -- Agathe Porte <agathe.porte@oss.qualcomm.com>  Wed, 19 Aug 2026 14:51:22 +0200
+ -- Agathe Porte <agathe.porte@oss.qualcomm.com>  Wed, 19 Aug 2026 16:09:57 +0200
 
 qmi-framework (0.1.4-0qli+staging1) forky; urgency=medium
 
