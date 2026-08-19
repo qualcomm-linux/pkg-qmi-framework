@@ -6,7 +6,7 @@ Build-Depends:
  libglib2.0-dev,
  libqrtr-dev,
  pkgconf,
-Standards-Version: 4.6.2
+Standards-Version: 4.7.4
 Homepage: http://support.cdmatech.com
 Vcs-Browser: https://github.com/qualcomm-linux/pkg-qmi-framework
 Vcs-Git: https://github.com/qualcomm-linux/pkg-qmi-framework.git
